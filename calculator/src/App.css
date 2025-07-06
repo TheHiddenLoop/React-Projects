@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.calculator-container {
+  user-select: text;
+  background-color: #333;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  overflow: hidden;
+}
+
+.calculator-display {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: right;
+  overflow: hidden;
+  min-height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.calculator-history {
+  font-size: 1.2em;
+  color: #b0b0b0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 5px;
+}
+
+.calculator-current-value {
+  font-size: 2.8em;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.calculator-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.calculator-button {
+  background-color: #555;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5em;
+  padding: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease,
+    box-shadow 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 60px;
+  min-height: 60px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.calculator-button:hover {
+  background-color: #666;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.calculator-button:active {
+  background-color: #444;
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.calculator-button.function {
+  background-color: #a6a6a6;
+  color: #333;
+}
+
+.calculator-button.function:hover {
+  background-color: #b3b3b3;
+}
+
+.calculator-button.function:active {
+  background-color: #999;
+}
+
+.calculator-button.operator {
+  background-color: #ff9500;
+}
+
+.calculator-button.operator:hover {
+  background-color: #ffa62b;
+}
+
+.calculator-button.operator:active {
+  background-color: #e68a00;
+}
+
+.calculator-button.zero {
+  grid-column: span 2;
+  border-radius: 30px;
+  justify-content: flex-start;
+  padding-left: 25px;
+}
