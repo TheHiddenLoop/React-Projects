@@ -1,0 +1,65 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  color: #333;
+}
+
+.stopwatch-container {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+h1 {
+  color: #2c3e50;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+}
+
+.time-display {
+  font-size: 4em;
+  font-family: 'Lucida Console', monospace;
+  color: #34495e;
+  margin-bottom: 40px;
+  padding: 10px 0;
+  border-bottom: 2px solid #ecf0f1;
+}
+
+.controls button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 15px 30px;
+  font-size: 1.3em;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  min-width: 120px;
+}
+
+.controls button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.controls button:active {
+  transform: translateY(0);
+}
+
+.controls button:nth-child(2) { 
+  background-color: #dc3545;
+}
+
+.controls button:nth-child(2):hover {
+  background-color: #c82333;
+}
