@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.notebook-bg {
+  background-image: 
+    repeating-linear-gradient(
+      to bottom,
+      #d1d5db,       /* horizontal line color */
+      #d1d5db 1px,
+      transparent 1px,
+      transparent 30px  /* horizontal spacing */
+    ),
+    repeating-linear-gradient(
+      to right,
+      #e5e7eb,       /* vertical line color */
+      #e5e7eb 1px,
+      transparent 1px,
+      transparent 30px  /* vertical spacing */
+    );
+  background-size: 30px 30px; /* grid spacing */
+  background-color: #fefefe;   /* page background */
+}
