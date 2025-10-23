@@ -1,0 +1,29 @@
+.divConat {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 1.5rem;
+  max-width: 72rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imageDiv {
+  height: 250px;
+  cursor: pointer;
+  width: 100%; 
+  border-radius: 20px;
+  box-shadow: 4px 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+.imageDiv img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+canvas {
+  border: 2px solid black;
+  height: 250px;
+  width: 30%;
+}

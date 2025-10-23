@@ -1,0 +1,35 @@
+html.light {
+  --bg-color: #ffffff;
+  --text-color: #1a1a1a;
+  --button-bg: #f0f0f0;
+  --button-text: #333;
+}
+
+html.dark {
+  --bg-color: #1e1e1e;
+  --text-color: #f0f0f0;
+  --button-bg: #333;
+  --button-text: #fff;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  font-family: sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.theme-toggle-button {
+  padding: 10px 20px;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.theme-toggle-button:hover {
+  opacity: 0.85;
+}

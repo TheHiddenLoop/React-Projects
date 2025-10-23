@@ -1,0 +1,155 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  background: #ffffff;
+  backdrop-filter: blur(6px);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
+  width: 600px;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15),
+    0 0 20px rgba(0, 150, 200, 0.08),
+    inset 0 0 1px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #0077b6;
+  text-shadow: 0 1px 3px rgba(0, 119, 182, 0.2);
+  letter-spacing: 1px;
+}
+
+p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 30px;
+  opacity: 0.9;
+  font-weight: 300;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+button {
+  font-size: 17px;
+  width: 120px;
+  height: 50px;
+  background-color: #00a8e8;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 168, 232, 0.2);
+}
+
+button:hover {
+  background-color: #007bbd;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 123, 189, 0.25);
+}
+
+button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 6px rgba(0, 123, 189, 0.15);
+}
+
+button:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+.btn-start {
+  background-color: #28a745;
+  box-shadow: 0 4px 10px rgba(40, 167, 69, 0.2);
+}
+
+.btn-start:hover {
+  background-color: #218838;
+  box-shadow: 0 6px 14px rgba(40, 167, 69, 0.3);
+}
+
+.btn-stop {
+  background-color: #dc3545;
+  box-shadow: 0 4px 10px rgba(220, 53, 69, 0.2);
+}
+
+.btn-stop:hover {
+  background-color: #c82333;
+  box-shadow: 0 6px 14px rgba(220, 53, 69, 0.3);
+}
+
+.btn-download {
+  background-color: #6f42c1;
+}
+
+.btn-download:hover {
+  background-color: #5936a8;
+  box-shadow: 0 4px 12px rgba(111, 66, 193, 0.3);
+}
+
+.hidden {
+  display: none !important;
+}
+
+.log-box,
+.state-box {
+  width: 100%;
+  min-height: 50px;
+  border: 1px solid #ddd;
+  padding: 12px;
+  font-size: 17px;
+  text-align: center;
+  margin-top: 10px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  word-wrap: break-word;
+  box-sizing: border-box;
+  color: #222;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 168, 232, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(0, 168, 232, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 168, 232, 0);
+  }
+}
+
+.logging .state-box {
+  animation: pulse 2s infinite;
+}
